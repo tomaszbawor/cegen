@@ -2,5 +2,28 @@
   "name": "cegen-api",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "Tomasz Bawor"
+  "author": "Tomasz Bawor",
+  "scripts": {
+    "dev": "nodemon --inspect ./src/index.js",
+    "test": "jest",
+    "lint": "eslint . ",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=13.10.1"
+  }
 }
